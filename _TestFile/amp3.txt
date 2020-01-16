@@ -1,0 +1,16 @@
+FAFeynAmpList[Process -> {{V[1], p1, 0, {}}, {V[3], p2, FCGV["MW"], -Charge}} -> {{V[1], k1, 0, {}}, {V[3], k2, FCGV["MW"], -Charge}}, Model -> {"SM"}, GenericModel -> {"Lorentz"},
+  AmplitudeLevel -> {Particles}, ExcludeParticles -> {}, ExcludeFieldPoints -> {}, LastSelections -> {}][FAFeynAmp[GraphName["", "T1", "G1C1P1", "N1"],
+  (-I)*Conjugate[FAPolarizationVector[k1, li3]]*Conjugate[FAPolarizationVector[k2, li4]]*FAPolarizationVector[p1, li1]*FAPolarizationVector[p2, li2]*
+   (I*FAMetricTensor[li1, li4]*FAMetricTensor[li2, li3]*FCGV["EL"]^2 - (2*I)*FAMetricTensor[li1, li3]*FAMetricTensor[li2, li4]*FCGV["EL"]^2 +
+    I*FAMetricTensor[li1, li2]*FAMetricTensor[li3, li4]*FCGV["EL"]^2)], FAFeynAmp[GraphName["", "T2", "G1C2P1", "N2"],
+  -(Conjugate[FAPolarizationVector[k1, li3]]*Conjugate[FAPolarizationVector[k2, li4]]*FAMetricTensor[li1, li2]*FAMetricTensor[li3, li4]*FAPolarizationVector[p1, li1]*FAPolarizationVector[p2, li2]*
+    FAPropagatorDenominator[k1 + k2, FCGV["MW"]]*FCGV["EL"]^2*FCGV["MW"]^2)], FAFeynAmp[GraphName["", "T2", "G2C3P1", "N3"],
+  -(Conjugate[FAPolarizationVector[k1, li3]]*Conjugate[FAPolarizationVector[k2, li4]]*(FAFourVector[-p1 + p2, li5]*FAMetricTensor[li1, li2] + FAFourVector[k1 + k2 + p1, li2]*FAMetricTensor[li1, li5] +
+     FAFourVector[-k1 - k2 - p2, li1]*FAMetricTensor[li2, li5])*(FAFourVector[k1 - k2, li6]*FAMetricTensor[li3, li4] + FAFourVector[-2*k1 - k2, li4]*FAMetricTensor[li3, li6] +
+     FAFourVector[k1 + 2*k2, li3]*FAMetricTensor[li4, li6])*FAMetricTensor[li5, li6]*FAPolarizationVector[p1, li1]*FAPolarizationVector[p2, li2]*FAPropagatorDenominator[k1 + k2, FCGV["MW"]]*
+    FCGV["EL"]^2)], FAFeynAmp[GraphName["", "T3", "G1C4P1", "N4"], -(Conjugate[FAPolarizationVector[k1, li3]]*Conjugate[FAPolarizationVector[k2, li4]]*FAMetricTensor[li1, li4]*FAMetricTensor[li2, li3]*
+    FAPolarizationVector[p1, li1]*FAPolarizationVector[p2, li2]*FAPropagatorDenominator[k1 - p2, FCGV["MW"]]*FCGV["EL"]^2*FCGV["MW"]^2)],
+ FAFeynAmp[GraphName["", "T3", "G2C5P1", "N5"], Conjugate[FAPolarizationVector[k1, li3]]*Conjugate[FAPolarizationVector[k2, li4]]*
+   (FAFourVector[-k1 - p2, li6]*FAMetricTensor[li2, li3] + FAFourVector[-k1 + 2*p2, li3]*FAMetricTensor[li2, li6] + FAFourVector[2*k1 - p2, li2]*FAMetricTensor[li3, li6])*
+   (FAFourVector[-k2 - p1, li5]*FAMetricTensor[li1, li4] + FAFourVector[k1 + p1 - p2, li4]*FAMetricTensor[li1, li5] + FAFourVector[-k1 + k2 + p2, li1]*FAMetricTensor[li4, li5])*FAMetricTensor[li5, li6]*
+   FAPolarizationVector[p1, li1]*FAPolarizationVector[p2, li2]*FAPropagatorDenominator[k1 - p2, FCGV["MW"]]*FCGV["EL"]^2]]

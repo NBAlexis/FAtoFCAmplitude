@@ -1,0 +1,14 @@
+FeynAmpList[Process -> {{V[1], p1, 0, {}}, {V[3], p2, MW, {Q}}} -> {{V[1], k1, 0, {}}, {V[3], k2, MW, {Q}}}, Model -> {"SMUnitary"}, GenericModel -> {"SMUnitary"}, AmplitudeLevel -> {Particles},
+  ExcludeParticles -> {}, ExcludeFieldPoints -> {}, LastSelections -> {}][FeynAmp[GraphName["", "T1", "G1C1P1", "N1"], (-I)*Conjugate[PolarizationVector[k1, li3]]*Conjugate[PolarizationVector[k2, li4]]*
+   ((-I)*gc12*MetricTensor[li1, li4]*MetricTensor[li2, li3] + (2*I)*gc12*MetricTensor[li1, li3]*MetricTensor[li2, li4] - I*gc12*MetricTensor[li1, li2]*MetricTensor[li3, li4])*PolarizationVector[p1, li1]*
+   PolarizationVector[p2, li2]], FeynAmp[GraphName["", "T2", "G1C2P1", "N2"], -(Conjugate[PolarizationVector[k1, li3]]*Conjugate[PolarizationVector[k2, li4]]*
+    ((-I)*gc9*FourVector[p1, li5]*MetricTensor[li1, li2] + I*gc9*FourVector[p2, li5]*MetricTensor[li1, li2] - I*gc9*FourVector[-k1 - k2, li2]*MetricTensor[li1, li5] +
+     I*gc9*FourVector[p1, li2]*MetricTensor[li1, li5] + I*gc9*FourVector[-k1 - k2, li1]*MetricTensor[li2, li5] - I*gc9*FourVector[p2, li1]*MetricTensor[li2, li5])*
+    (I*gc9*FourVector[-k1, li6]*MetricTensor[li3, li4] - I*gc9*FourVector[-k2, li6]*MetricTensor[li3, li4] - I*gc9*FourVector[-k1, li4]*MetricTensor[li3, li6] +
+     I*gc9*FourVector[k1 + k2, li4]*MetricTensor[li3, li6] + I*gc9*FourVector[-k2, li3]*MetricTensor[li4, li6] - I*gc9*FourVector[k1 + k2, li3]*MetricTensor[li4, li6])*MetricTensor[li5, li6]*
+    PolarizationVector[p1, li1]*PolarizationVector[p2, li2]*PropagatorDenominator[k1 + k2, MW])], FeynAmp[GraphName["", "T3", "G1C3P1", "N3"],
+  -(Conjugate[PolarizationVector[k1, li3]]*Conjugate[PolarizationVector[k2, li4]]*((-I)*gc9*FourVector[-k1, li6]*MetricTensor[li2, li3] + I*gc9*FourVector[p2, li6]*MetricTensor[li2, li3] +
+     I*gc9*FourVector[k1 - p2, li3]*MetricTensor[li2, li6] - I*gc9*FourVector[p2, li3]*MetricTensor[li2, li6] + I*gc9*FourVector[-k1, li2]*MetricTensor[li3, li6] -
+     I*gc9*FourVector[k1 - p2, li2]*MetricTensor[li3, li6])*((-I)*gc9*FourVector[-k2, li5]*MetricTensor[li1, li4] + I*gc9*FourVector[p1, li5]*MetricTensor[li1, li4] -
+     I*gc9*FourVector[p1, li4]*MetricTensor[li1, li5] + I*gc9*FourVector[-k1 + p2, li4]*MetricTensor[li1, li5] + I*gc9*FourVector[-k2, li1]*MetricTensor[li4, li5] -
+     I*gc9*FourVector[-k1 + p2, li1]*MetricTensor[li4, li5])*MetricTensor[li5, li6]*PolarizationVector[p1, li1]*PolarizationVector[p2, li2]*PropagatorDenominator[k1 - p2, MW])]]
