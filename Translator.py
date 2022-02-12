@@ -1,7 +1,7 @@
 from FAAmplitudeParser import *
 
 folderName = "F:\\PyworkingFolder\\FAtoFCAmplitude\\_TestFile\\"
-fileName = "amp10.txt"
+fileName = "amp11.txt"
 fromFeynCalc = False;
 
 fileObj = open(folderName + fileName, "r")
