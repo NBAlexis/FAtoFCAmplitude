@@ -1,0 +1,8 @@
+FeynAmpList[Process -> {{S[4], p1, Malp, {}}} -> {{V[1], k1, 0, {}},
+     {V[1], k2, 0, {}}}, Model -> {"alpw"}, GenericModel -> {"alpw"},
+  AmplitudeLevel -> {Particles}, ExcludeParticles -> {},
+  ExcludeFieldPoints -> {}, LastSelections -> {}][
+ FeynAmp[GraphName["", "T1", "G1C1P1", "N1"],
+  gc3*Conjugate[PolarizationVector[k1, li1]]*
+   Conjugate[PolarizationVector[k2, li2]]*LeviCivita[li1, li2,
+    FourVector[-k1], FourVector[-k2]]]]

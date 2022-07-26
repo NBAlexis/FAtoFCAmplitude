@@ -94,7 +94,7 @@ def TranslateEpsFirstTime(amplitude: str, fromFeynCalc: bool) -> str:
     retStr: str = amplitude
     iPosition: int = 0
     iPosition = retStr.find("LeviCivita[")
-    print(iPosition)
+    print("LeviCivita Position: ", iPosition)
     while iPosition >= 0:
         # find the corresponding ]
         level: int = 0

@@ -1,0 +1,18 @@
+FeynAmpList[Process -> {{V[3], p1, MW, -Charge}, {-V[3], p2, MW, Charge}} -> {{V[3], k1, MW, -Charge}, {-V[3], k2, MW, Charge}}, Model -> {"SM", "UnitarySM"}, GenericModel -> {"Lorentz", "UnitaryLorentz"}, AmplitudeLevel -> {Particles}, ExcludeParticles -> {}, 
+  ExcludeFieldPoints -> {}, LastSelections -> {}][FeynAmp[GraphName["", "T1", "G1C1P1", "N1"], (-I)*Conjugate[PolarizationVector[k1, li3]]*Conjugate[PolarizationVector[k2, li4]]*
+   (((2*I)*EL^2*MetricTensor[li1, li4]*MetricTensor[li2, li3])/SW^2 - (I*EL^2*MetricTensor[li1, li3]*MetricTensor[li2, li4])/SW^2 - (I*EL^2*MetricTensor[li1, li2]*MetricTensor[li3, li4])/SW^2)*PolarizationVector[p1, li1]*PolarizationVector[p2, li2]], 
+ FeynAmp[GraphName["", "T2", "G1C2P1", "N2"], -((EL^2*MW^2*Conjugate[PolarizationVector[k1, li3]]*Conjugate[PolarizationVector[k2, li4]]*MetricTensor[li1, li2]*MetricTensor[li3, li4]*PolarizationVector[p1, li1]*PolarizationVector[p2, li2]*
+     PropagatorDenominator[k1 + k2, MH])/SW^2)], FeynAmp[GraphName["", "T2", "G2C3P1", "N3"], -(EL^2*Conjugate[PolarizationVector[k1, li3]]*Conjugate[PolarizationVector[k2, li4]]*
+    (FourVector[-p1 + p2, li5]*MetricTensor[li1, li2] + FourVector[k1 + k2 + p1, li2]*MetricTensor[li1, li5] + FourVector[-k1 - k2 - p2, li1]*MetricTensor[li2, li5])*
+    (FourVector[k1 - k2, li6]*MetricTensor[li3, li4] + FourVector[-2*k1 - k2, li4]*MetricTensor[li3, li6] + FourVector[k1 + 2*k2, li3]*MetricTensor[li4, li6])*MetricTensor[li5, li6]*PolarizationVector[p1, li1]*PolarizationVector[p2, li2]*
+    PropagatorDenominator[k1 + k2, 0])], FeynAmp[GraphName["", "T2", "G2C3P2", "N4"], 
+  -((CW^2*EL^2*Conjugate[PolarizationVector[k1, li3]]*Conjugate[PolarizationVector[k2, li4]]*(FourVector[-p1 + p2, li5]*MetricTensor[li1, li2] + FourVector[k1 + k2 + p1, li2]*MetricTensor[li1, li5] + FourVector[-k1 - k2 - p2, li1]*MetricTensor[li2, li5])*
+     (FourVector[k1 - k2, li6]*MetricTensor[li3, li4] + FourVector[-2*k1 - k2, li4]*MetricTensor[li3, li6] + FourVector[k1 + 2*k2, li3]*MetricTensor[li4, li6])*MetricTensor[li5, li6]*PolarizationVector[p1, li1]*PolarizationVector[p2, li2]*
+     PropagatorDenominator[k1 + k2, MZ])/SW^2)], FeynAmp[GraphName["", "T3", "G1C4P1", "N5"], -((EL^2*MW^2*Conjugate[PolarizationVector[k1, li3]]*Conjugate[PolarizationVector[k2, li4]]*MetricTensor[li1, li3]*MetricTensor[li2, li4]*PolarizationVector[p1, li1]*
+     PolarizationVector[p2, li2]*PropagatorDenominator[k2 - p2, MH])/SW^2)], FeynAmp[GraphName["", "T3", "G2C5P1", "N6"], 
+  -(EL^2*Conjugate[PolarizationVector[k1, li3]]*Conjugate[PolarizationVector[k2, li4]]*(FourVector[-k1 - p1, li5]*MetricTensor[li1, li3] + FourVector[k2 + p1 - p2, li3]*MetricTensor[li1, li5] + FourVector[k1 - k2 + p2, li1]*MetricTensor[li3, li5])*
+    (FourVector[-k2 - p2, li6]*MetricTensor[li2, li4] + FourVector[-k2 + 2*p2, li4]*MetricTensor[li2, li6] + FourVector[2*k2 - p2, li2]*MetricTensor[li4, li6])*MetricTensor[li5, li6]*PolarizationVector[p1, li1]*PolarizationVector[p2, li2]*
+    PropagatorDenominator[k2 - p2, 0])], FeynAmp[GraphName["", "T3", "G2C5P2", "N7"], 
+  -((CW^2*EL^2*Conjugate[PolarizationVector[k1, li3]]*Conjugate[PolarizationVector[k2, li4]]*(FourVector[-k1 - p1, li5]*MetricTensor[li1, li3] + FourVector[k2 + p1 - p2, li3]*MetricTensor[li1, li5] + FourVector[k1 - k2 + p2, li1]*MetricTensor[li3, li5])*
+     (FourVector[-k2 - p2, li6]*MetricTensor[li2, li4] + FourVector[-k2 + 2*p2, li4]*MetricTensor[li2, li6] + FourVector[2*k2 - p2, li2]*MetricTensor[li4, li6])*MetricTensor[li5, li6]*PolarizationVector[p1, li1]*PolarizationVector[p2, li2]*
+     PropagatorDenominator[k2 - p2, MZ])/SW^2)]]

@@ -1,0 +1,143 @@
+FeynAmpList[Process -> {{F[2, {2}], p1, MMU, {-Q, LeptonNumber}},
+     {-F[2, {2}], p2, MMU, {Q, -LeptonNumber}}} ->
+    {{V[1], k1, 0, {}}, {V[1], k2, 0, {}}, {V[1], k3, 0, {}}},
+  Model -> {"AQGCFA_t0"}, GenericModel -> {"AQGCFA_t0"},
+  AmplitudeLevel -> {Particles}, ExcludeParticles -> {},
+  ExcludeFieldPoints -> {}, LastSelections -> {}][
+ FeynAmp[GraphName["", "T1", "G1C1P1", "N1"],
+  -(Conjugate[PolarizationVector[k1, li1]]*
+    Conjugate[PolarizationVector[k2, li2]]*
+    Conjugate[PolarizationVector[k3, li3]]*DiracSpinor[-p2, MMU] .
+     (I*gc54*DiracMatrix[li4] . ChiralityProjector[-1] +
+      I*gc54*DiracMatrix[li4] . ChiralityProjector[1]) . DiracSpinor[p1, MMU]*
+    MetricTensor[li4, li5]*PropagatorDenominator[k1 + k2 + k3, 0]*
+    (I*gc3*FourVector[-k1, li5]*FourVector[-k2, li3]*FourVector[-k3, li2]*
+      FourVector[k1 + k2 + k3, li1] + I*gc3*FourVector[-k1, li3]*
+      FourVector[-k2, li5]*FourVector[-k3, li1]*FourVector[k1 + k2 + k3,
+       li2] + I*gc3*FourVector[-k1, li2]*FourVector[-k2, li1]*
+      FourVector[-k3, li5]*FourVector[k1 + k2 + k3, li3] -
+     I*gc3*FourVector[-k3, li5]*FourVector[k1 + k2 + k3, li3]*
+      MetricTensor[li1, li2]*ScalarProduct[-k1, -k2] -
+     I*gc3*FourVector[-k2, li5]*FourVector[k1 + k2 + k3, li2]*
+      MetricTensor[li1, li3]*ScalarProduct[-k1, -k3] -
+     I*gc3*FourVector[-k2, li3]*FourVector[-k3, li2]*MetricTensor[li1, li5]*
+      ScalarProduct[-k1, k1 + k2 + k3] - I*gc3*FourVector[-k1, li5]*
+      FourVector[k1 + k2 + k3, li1]*MetricTensor[li2, li3]*
+      ScalarProduct[-k2, -k3] + I*gc3*MetricTensor[li1, li5]*
+      MetricTensor[li2, li3]*ScalarProduct[-k1, k1 + k2 + k3]*
+      ScalarProduct[-k2, -k3] - I*gc3*FourVector[-k1, li3]*
+      FourVector[-k3, li1]*MetricTensor[li2, li5]*ScalarProduct[-k2,
+       k1 + k2 + k3] + I*gc3*MetricTensor[li1, li3]*MetricTensor[li2, li5]*
+      ScalarProduct[-k1, -k3]*ScalarProduct[-k2, k1 + k2 + k3] -
+     I*gc3*FourVector[-k1, li2]*FourVector[-k2, li1]*MetricTensor[li3, li5]*
+      ScalarProduct[-k3, k1 + k2 + k3] + I*gc3*MetricTensor[li1, li2]*
+      MetricTensor[li3, li5]*ScalarProduct[-k1, -k2]*
+      ScalarProduct[-k3, k1 + k2 + k3]))],
+ FeynAmp[GraphName["", "T1", "G1C1P2", "N2"],
+  -(Conjugate[PolarizationVector[k1, li1]]*
+    Conjugate[PolarizationVector[k2, li2]]*
+    Conjugate[PolarizationVector[k3, li3]]*DiracSpinor[-p2, MMU] .
+     (I*gc66L*DiracMatrix[li4] . ChiralityProjector[-1] +
+      I*gc66R*DiracMatrix[li4] . ChiralityProjector[1]) .
+     DiracSpinor[p1, MMU]*MetricTensor[li4, li5]*PropagatorDenominator[
+     k1 + k2 + k3, MZ]*(I*gc6*FourVector[-k1, li5]*FourVector[-k2, li3]*
+      FourVector[-k3, li2]*FourVector[k1 + k2 + k3, li1] +
+     I*gc6*FourVector[-k1, li3]*FourVector[-k2, li5]*FourVector[-k3, li1]*
+      FourVector[k1 + k2 + k3, li2] + I*gc6*FourVector[-k1, li2]*
+      FourVector[-k2, li1]*FourVector[-k3, li5]*FourVector[k1 + k2 + k3,
+       li3] - I*gc6*FourVector[-k3, li5]*FourVector[k1 + k2 + k3, li3]*
+      MetricTensor[li1, li2]*ScalarProduct[-k1, -k2] -
+     I*gc6*FourVector[-k2, li5]*FourVector[k1 + k2 + k3, li2]*
+      MetricTensor[li1, li3]*ScalarProduct[-k1, -k3] -
+     I*gc6*FourVector[-k2, li3]*FourVector[-k3, li2]*MetricTensor[li1, li5]*
+      ScalarProduct[-k1, k1 + k2 + k3] - I*gc6*FourVector[-k1, li5]*
+      FourVector[k1 + k2 + k3, li1]*MetricTensor[li2, li3]*
+      ScalarProduct[-k2, -k3] + I*gc6*MetricTensor[li1, li5]*
+      MetricTensor[li2, li3]*ScalarProduct[-k1, k1 + k2 + k3]*
+      ScalarProduct[-k2, -k3] - I*gc6*FourVector[-k1, li3]*
+      FourVector[-k3, li1]*MetricTensor[li2, li5]*ScalarProduct[-k2,
+       k1 + k2 + k3] + I*gc6*MetricTensor[li1, li3]*MetricTensor[li2, li5]*
+      ScalarProduct[-k1, -k3]*ScalarProduct[-k2, k1 + k2 + k3] -
+     I*gc6*FourVector[-k1, li2]*FourVector[-k2, li1]*MetricTensor[li3, li5]*
+      ScalarProduct[-k3, k1 + k2 + k3] + I*gc6*MetricTensor[li1, li2]*
+      MetricTensor[li3, li5]*ScalarProduct[-k1, -k2]*
+      ScalarProduct[-k3, k1 + k2 + k3]))],
+ FeynAmp[GraphName["", "T2", "G1C2P1", "N3"],
+  I*Conjugate[PolarizationVector[k1, li1]]*
+   Conjugate[PolarizationVector[k2, li2]]*
+   Conjugate[PolarizationVector[k3, li3]]*DiracSpinor[-p2, MMU] .
+    (I*gc54*DiracMatrix[li2] . ChiralityProjector[-1] +
+     I*gc54*DiracMatrix[li2] . ChiralityProjector[1]) .
+    (MMU + DiracSlash[k2 - p2]) .
+    (I*gc54*DiracMatrix[li3] . ChiralityProjector[-1] +
+     I*gc54*DiracMatrix[li3] . ChiralityProjector[1]) .
+    (MMU + DiracSlash[k2 + k3 - p2]) .
+    (I*gc54*DiracMatrix[li1] . ChiralityProjector[-1] +
+     I*gc54*DiracMatrix[li1] . ChiralityProjector[1]) . DiracSpinor[p1, MMU]*
+   PropagatorDenominator[-k2 + p2, MMU]*PropagatorDenominator[-k2 - k3 + p2,
+    MMU]], FeynAmp[GraphName["", "T3", "G1C3P1", "N4"],
+  I*Conjugate[PolarizationVector[k1, li1]]*
+   Conjugate[PolarizationVector[k2, li2]]*
+   Conjugate[PolarizationVector[k3, li3]]*DiracSpinor[-p2, MMU] .
+    (I*gc54*DiracMatrix[li3] . ChiralityProjector[-1] +
+     I*gc54*DiracMatrix[li3] . ChiralityProjector[1]) .
+    (MMU + DiracSlash[k3 - p2]) .
+    (I*gc54*DiracMatrix[li2] . ChiralityProjector[-1] +
+     I*gc54*DiracMatrix[li2] . ChiralityProjector[1]) .
+    (MMU + DiracSlash[k2 + k3 - p2]) .
+    (I*gc54*DiracMatrix[li1] . ChiralityProjector[-1] +
+     I*gc54*DiracMatrix[li1] . ChiralityProjector[1]) . DiracSpinor[p1, MMU]*
+   PropagatorDenominator[-k3 + p2, MMU]*PropagatorDenominator[-k2 - k3 + p2,
+    MMU]], FeynAmp[GraphName["", "T4", "G1C4P1", "N5"],
+  I*Conjugate[PolarizationVector[k1, li1]]*
+   Conjugate[PolarizationVector[k2, li2]]*
+   Conjugate[PolarizationVector[k3, li3]]*DiracSpinor[-p2, MMU] .
+    (I*gc54*DiracMatrix[li1] . ChiralityProjector[-1] +
+     I*gc54*DiracMatrix[li1] . ChiralityProjector[1]) .
+    (MMU + DiracSlash[k1 - p2]) .
+    (I*gc54*DiracMatrix[li3] . ChiralityProjector[-1] +
+     I*gc54*DiracMatrix[li3] . ChiralityProjector[1]) .
+    (MMU + DiracSlash[k1 + k3 - p2]) .
+    (I*gc54*DiracMatrix[li2] . ChiralityProjector[-1] +
+     I*gc54*DiracMatrix[li2] . ChiralityProjector[1]) . DiracSpinor[p1, MMU]*
+   PropagatorDenominator[-k1 + p2, MMU]*PropagatorDenominator[-k1 - k3 + p2,
+    MMU]], FeynAmp[GraphName["", "T5", "G1C5P1", "N6"],
+  I*Conjugate[PolarizationVector[k1, li1]]*
+   Conjugate[PolarizationVector[k2, li2]]*
+   Conjugate[PolarizationVector[k3, li3]]*DiracSpinor[-p2, MMU] .
+    (I*gc54*DiracMatrix[li1] . ChiralityProjector[-1] +
+     I*gc54*DiracMatrix[li1] . ChiralityProjector[1]) .
+    (MMU + DiracSlash[k1 - p2]) .
+    (I*gc54*DiracMatrix[li2] . ChiralityProjector[-1] +
+     I*gc54*DiracMatrix[li2] . ChiralityProjector[1]) .
+    (MMU + DiracSlash[k1 + k2 - p2]) .
+    (I*gc54*DiracMatrix[li3] . ChiralityProjector[-1] +
+     I*gc54*DiracMatrix[li3] . ChiralityProjector[1]) . DiracSpinor[p1, MMU]*
+   PropagatorDenominator[-k1 + p2, MMU]*PropagatorDenominator[-k1 - k2 + p2,
+    MMU]], FeynAmp[GraphName["", "T6", "G1C6P1", "N7"],
+  I*Conjugate[PolarizationVector[k1, li1]]*
+   Conjugate[PolarizationVector[k2, li2]]*
+   Conjugate[PolarizationVector[k3, li3]]*DiracSpinor[-p2, MMU] .
+    (I*gc54*DiracMatrix[li3] . ChiralityProjector[-1] +
+     I*gc54*DiracMatrix[li3] . ChiralityProjector[1]) .
+    (MMU + DiracSlash[k3 - p2]) .
+    (I*gc54*DiracMatrix[li1] . ChiralityProjector[-1] +
+     I*gc54*DiracMatrix[li1] . ChiralityProjector[1]) .
+    (MMU + DiracSlash[k1 + k3 - p2]) .
+    (I*gc54*DiracMatrix[li2] . ChiralityProjector[-1] +
+     I*gc54*DiracMatrix[li2] . ChiralityProjector[1]) . DiracSpinor[p1, MMU]*
+   PropagatorDenominator[-k3 + p2, MMU]*PropagatorDenominator[-k1 - k3 + p2,
+    MMU]], FeynAmp[GraphName["", "T7", "G1C7P1", "N8"],
+  I*Conjugate[PolarizationVector[k1, li1]]*
+   Conjugate[PolarizationVector[k2, li2]]*
+   Conjugate[PolarizationVector[k3, li3]]*DiracSpinor[-p2, MMU] .
+    (I*gc54*DiracMatrix[li2] . ChiralityProjector[-1] +
+     I*gc54*DiracMatrix[li2] . ChiralityProjector[1]) .
+    (MMU + DiracSlash[k2 - p2]) .
+    (I*gc54*DiracMatrix[li1] . ChiralityProjector[-1] +
+     I*gc54*DiracMatrix[li1] . ChiralityProjector[1]) .
+    (MMU + DiracSlash[k1 + k2 - p2]) .
+    (I*gc54*DiracMatrix[li3] . ChiralityProjector[-1] +
+     I*gc54*DiracMatrix[li3] . ChiralityProjector[1]) . DiracSpinor[p1, MMU]*
+   PropagatorDenominator[-k2 + p2, MMU]*PropagatorDenominator[-k1 - k2 + p2,
+    MMU]]]
