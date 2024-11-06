@@ -152,8 +152,10 @@ def TranslateSpinor(amplitude: str, fromFeynCalc: bool) -> str:
     if fromFeynCalc:
         print("TranslateSpinor not supported for FeynCalc yet")
         return amplitude
-    retStr = re.sub(r'DiracSpinor\[\s*-\s*(p[\d]+)\s*,([^\]]+)\]', r'SpinorVBar[Momentum[\g<1>],\g<2>]', amplitude)
+    retStr = re.sub(r'DiracSpinor\[\s*-\s*(p[\d]+)\s*,([^\]]+)\]', r'SpinorVBar[-Momentum[\g<1>],\g<2>]', amplitude)
     retStr = re.sub(r'DiracSpinor\[\s*(p[\d]+)\s*,\s*([^\]]+)\]', r'SpinorU[Momentum[\g<1>], \g<2>]', retStr)
+    retStr = re.sub(r'DiracSpinor\[\s*-\s*(k[\d]+)\s*,([^\]]+)\]', r'SpinorV[-Momentum[\g<1>],\g<2>]', retStr)
+    retStr = re.sub(r'DiracSpinor\[\s*(k[\d]+)\s*,\s*([^\]]+)\]', r'SpinorUBar[Momentum[\g<1>], \g<2>]', retStr)
     return retStr
 
 

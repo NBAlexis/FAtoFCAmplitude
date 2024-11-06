@@ -1,0 +1,273 @@
+FeynAmpList[Process -> {{F[2, {2}], p1, MMU, {-Q, LeptonNumber}},
+     {-F[2, {2}], p2, MMU, {Q, -LeptonNumber}}} ->
+    {{V[2], k1, MZ, {}}, {V[4, {i}], k2, 0, {}}, {V[4, {i}], k3, 0, {}}},
+  Model -> {"gQGC_FA"}, GenericModel -> {"gQGC_FA"},
+  AmplitudeLevel -> {Particles}, ExcludeParticles -> {},
+  ExcludeFieldPoints -> {}, LastSelections -> {}][
+ FeynAmp[GraphName["", "T1", "G1C1P1", "N1"],
+  -(Conjugate[PolarizationVector[k1, li1]]*
+    Conjugate[PolarizationVector[k2, li2]]*
+    Conjugate[PolarizationVector[k3, li3]]*DiracSpinor[-p2, MMU] .
+     (I*gc15*DiracMatrix[li4] . ChiralityProjector[-1] +
+      I*gc15*DiracMatrix[li4] . ChiralityProjector[1]) . DiracSpinor[p1, MMU]*
+    MetricTensor[li4, li5]*PropagatorDenominator[k1 + k2 + k3, 0]*
+    ((8*I)*(FgT0 - FgT4)*gc33*FourVector[-k1, li5]*FourVector[-k2, li3]*
+      FourVector[-k3, li2]*FourVector[k1 + k2 + k3, li1] +
+     I*(FgT2 - FgT6)*gc33*FourVector[-k1, li3]*FourVector[-k2, li5]*
+      FourVector[-k3, li2]*FourVector[k1 + k2 + k3, li1] +
+     I*(FgT2 - FgT6)*gc33*FourVector[-k1, li2]*FourVector[-k2, li3]*
+      FourVector[-k3, li5]*FourVector[k1 + k2 + k3, li1] +
+     I*(FgT2 - FgT6)*gc33*FourVector[-k1, li5]*FourVector[-k2, li3]*
+      FourVector[-k3, li1]*FourVector[k1 + k2 + k3, li2] +
+     (4*I)*(FgT1 - FgT5)*gc33*FourVector[-k1, li3]*FourVector[-k2, li5]*
+      FourVector[-k3, li1]*FourVector[k1 + k2 + k3, li2] +
+     (2*I)*(FgT3 - FgT7)*gc33*FourVector[-k1, li3]*FourVector[-k2, li1]*
+      FourVector[-k3, li5]*FourVector[k1 + k2 + k3, li2] +
+     (2*I)*(FgT3 - FgT7)*gc33*FourVector[-k1, li2]*FourVector[-k2, li5]*
+      FourVector[-k3, li1]*FourVector[k1 + k2 + k3, li3] +
+     I*(FgT2 - FgT6)*gc33*FourVector[-k1, li5]*FourVector[-k2, li1]*
+      FourVector[-k3, li2]*FourVector[k1 + k2 + k3, li3] +
+     (4*I)*(FgT1 - FgT5)*gc33*FourVector[-k1, li2]*FourVector[-k2, li1]*
+      FourVector[-k3, li5]*FourVector[k1 + k2 + k3, li3] -
+     (4*I)*(FgT1 - FgT5)*gc33*FourVector[-k3, li5]*FourVector[k1 + k2 + k3,
+       li3]*MetricTensor[li1, li2]*ScalarProduct[-k1, -k2] -
+     (2*I)*(FgT3 - FgT7)*gc33*FourVector[-k3, li5]*FourVector[k1 + k2 + k3,
+       li2]*MetricTensor[li1, li3]*ScalarProduct[-k1, -k2] -
+     I*(FgT2 - FgT6)*gc33*FourVector[-k3, li2]*FourVector[k1 + k2 + k3, li3]*
+      MetricTensor[li1, li5]*ScalarProduct[-k1, -k2] -
+     I*(FgT2 - FgT6)*gc33*FourVector[-k3, li5]*FourVector[k1 + k2 + k3, li1]*
+      MetricTensor[li2, li3]*ScalarProduct[-k1, -k2] -
+     (2*I)*(FgT3 - FgT7)*gc33*FourVector[-k3, li1]*FourVector[k1 + k2 + k3,
+       li3]*MetricTensor[li2, li5]*ScalarProduct[-k1, -k2] +
+     I*(FgT2 - FgT6)*gc33*FourVector[-k3, li2]*FourVector[k1 + k2 + k3, li1]*
+      MetricTensor[li3, li5]*ScalarProduct[-k1, -k2] +
+     (2*I)*(FgT3 - FgT7)*gc33*FourVector[-k3, li1]*FourVector[k1 + k2 + k3,
+       li2]*MetricTensor[li3, li5]*ScalarProduct[-k1, -k2] -
+     (2*I)*(FgT3 - FgT7)*gc33*FourVector[-k2, li5]*FourVector[k1 + k2 + k3,
+       li3]*MetricTensor[li1, li2]*ScalarProduct[-k1, -k3] -
+     (4*I)*(FgT1 - FgT5)*gc33*FourVector[-k2, li5]*FourVector[k1 + k2 + k3,
+       li2]*MetricTensor[li1, li3]*ScalarProduct[-k1, -k3] -
+     I*(FgT2 - FgT6)*gc33*FourVector[-k2, li3]*FourVector[k1 + k2 + k3, li2]*
+      MetricTensor[li1, li5]*ScalarProduct[-k1, -k3] -
+     I*(FgT2 - FgT6)*gc33*FourVector[-k2, li5]*FourVector[k1 + k2 + k3, li1]*
+      MetricTensor[li2, li3]*ScalarProduct[-k1, -k3] +
+     I*(FgT2 - FgT6)*gc33*FourVector[-k2, li3]*FourVector[k1 + k2 + k3, li1]*
+      MetricTensor[li2, li5]*ScalarProduct[-k1, -k3] +
+     (2*I)*(FgT3 - FgT7)*gc33*FourVector[-k2, li1]*FourVector[k1 + k2 + k3,
+       li3]*MetricTensor[li2, li5]*ScalarProduct[-k1, -k3] -
+     (2*I)*(FgT3 - FgT7)*gc33*FourVector[-k2, li1]*FourVector[k1 + k2 + k3,
+       li2]*MetricTensor[li3, li5]*ScalarProduct[-k1, -k3] -
+     I*(FgT2 - FgT6)*gc33*FourVector[-k2, li3]*FourVector[-k3, li5]*
+      MetricTensor[li1, li2]*ScalarProduct[-k1, k1 + k2 + k3] -
+     I*(FgT2 - FgT6)*gc33*FourVector[-k2, li5]*FourVector[-k3, li2]*
+      MetricTensor[li1, li3]*ScalarProduct[-k1, k1 + k2 + k3] -
+     (8*I)*(FgT0 - FgT4)*gc33*FourVector[-k2, li3]*FourVector[-k3, li2]*
+      MetricTensor[li1, li5]*ScalarProduct[-k1, k1 + k2 + k3] +
+     I*(FgT2 - FgT6)*gc33*FourVector[-k2, li5]*FourVector[-k3, li1]*
+      MetricTensor[li2, li3]*ScalarProduct[-k1, k1 + k2 + k3] +
+     I*(FgT2 - FgT6)*gc33*FourVector[-k2, li1]*FourVector[-k3, li5]*
+      MetricTensor[li2, li3]*ScalarProduct[-k1, k1 + k2 + k3] -
+     I*(FgT2 - FgT6)*gc33*FourVector[-k2, li3]*FourVector[-k3, li1]*
+      MetricTensor[li2, li5]*ScalarProduct[-k1, k1 + k2 + k3] -
+     I*(FgT2 - FgT6)*gc33*FourVector[-k2, li1]*FourVector[-k3, li2]*
+      MetricTensor[li3, li5]*ScalarProduct[-k1, k1 + k2 + k3] -
+     I*(FgT2 - FgT6)*gc33*FourVector[-k1, li5]*FourVector[k1 + k2 + k3, li3]*
+      MetricTensor[li1, li2]*ScalarProduct[-k2, -k3] -
+     I*(FgT2 - FgT6)*gc33*FourVector[-k1, li5]*FourVector[k1 + k2 + k3, li2]*
+      MetricTensor[li1, li3]*ScalarProduct[-k2, -k3] +
+     I*(FgT2 - FgT6)*gc33*FourVector[-k1, li3]*FourVector[k1 + k2 + k3, li2]*
+      MetricTensor[li1, li5]*ScalarProduct[-k2, -k3] +
+     I*(FgT2 - FgT6)*gc33*FourVector[-k1, li2]*FourVector[k1 + k2 + k3, li3]*
+      MetricTensor[li1, li5]*ScalarProduct[-k2, -k3] -
+     (8*I)*(FgT0 - FgT4)*gc33*FourVector[-k1, li5]*FourVector[k1 + k2 + k3,
+       li1]*MetricTensor[li2, li3]*ScalarProduct[-k2, -k3] -
+     I*(FgT2 - FgT6)*gc33*FourVector[-k1, li3]*FourVector[k1 + k2 + k3, li1]*
+      MetricTensor[li2, li5]*ScalarProduct[-k2, -k3] -
+     I*(FgT2 - FgT6)*gc33*FourVector[-k1, li2]*FourVector[k1 + k2 + k3, li1]*
+      MetricTensor[li3, li5]*ScalarProduct[-k2, -k3] +
+     (8*I)*(FgT0 - FgT4)*gc33*MetricTensor[li1, li5]*MetricTensor[li2, li3]*
+      ScalarProduct[-k1, k1 + k2 + k3]*ScalarProduct[-k2, -k3] +
+     I*(FgT2 - FgT6)*gc33*MetricTensor[li1, li3]*MetricTensor[li2, li5]*
+      ScalarProduct[-k1, k1 + k2 + k3]*ScalarProduct[-k2, -k3] +
+     I*(FgT2 - FgT6)*gc33*MetricTensor[li1, li2]*MetricTensor[li3, li5]*
+      ScalarProduct[-k1, k1 + k2 + k3]*ScalarProduct[-k2, -k3] -
+     (2*I)*(FgT3 - FgT7)*gc33*FourVector[-k1, li3]*FourVector[-k3, li5]*
+      MetricTensor[li1, li2]*ScalarProduct[-k2, k1 + k2 + k3] +
+     I*(FgT2 - FgT6)*gc33*FourVector[-k1, li5]*FourVector[-k3, li2]*
+      MetricTensor[li1, li3]*ScalarProduct[-k2, k1 + k2 + k3] +
+     (2*I)*(FgT3 - FgT7)*gc33*FourVector[-k1, li2]*FourVector[-k3, li5]*
+      MetricTensor[li1, li3]*ScalarProduct[-k2, k1 + k2 + k3] -
+     I*(FgT2 - FgT6)*gc33*FourVector[-k1, li3]*FourVector[-k3, li2]*
+      MetricTensor[li1, li5]*ScalarProduct[-k2, k1 + k2 + k3] -
+     I*(FgT2 - FgT6)*gc33*FourVector[-k1, li5]*FourVector[-k3, li1]*
+      MetricTensor[li2, li3]*ScalarProduct[-k2, k1 + k2 + k3] -
+     (4*I)*(FgT1 - FgT5)*gc33*FourVector[-k1, li3]*FourVector[-k3, li1]*
+      MetricTensor[li2, li5]*ScalarProduct[-k2, k1 + k2 + k3] -
+     (2*I)*(FgT3 - FgT7)*gc33*FourVector[-k1, li2]*FourVector[-k3, li1]*
+      MetricTensor[li3, li5]*ScalarProduct[-k2, k1 + k2 + k3] +
+     I*(FgT2 - FgT6)*gc33*MetricTensor[li1, li5]*MetricTensor[li2, li3]*
+      ScalarProduct[-k1, -k3]*ScalarProduct[-k2, k1 + k2 + k3] +
+     (4*I)*(FgT1 - FgT5)*gc33*MetricTensor[li1, li3]*MetricTensor[li2, li5]*
+      ScalarProduct[-k1, -k3]*ScalarProduct[-k2, k1 + k2 + k3] +
+     (2*I)*(FgT3 - FgT7)*gc33*MetricTensor[li1, li2]*MetricTensor[li3, li5]*
+      ScalarProduct[-k1, -k3]*ScalarProduct[-k2, k1 + k2 + k3] +
+     I*(FgT2 - FgT6)*gc33*FourVector[-k1, li5]*FourVector[-k2, li3]*
+      MetricTensor[li1, li2]*ScalarProduct[-k3, k1 + k2 + k3] +
+     (2*I)*(FgT3 - FgT7)*gc33*FourVector[-k1, li3]*FourVector[-k2, li5]*
+      MetricTensor[li1, li2]*ScalarProduct[-k3, k1 + k2 + k3] -
+     (2*I)*(FgT3 - FgT7)*gc33*FourVector[-k1, li2]*FourVector[-k2, li5]*
+      MetricTensor[li1, li3]*ScalarProduct[-k3, k1 + k2 + k3] -
+     I*(FgT2 - FgT6)*gc33*FourVector[-k1, li2]*FourVector[-k2, li3]*
+      MetricTensor[li1, li5]*ScalarProduct[-k3, k1 + k2 + k3] -
+     I*(FgT2 - FgT6)*gc33*FourVector[-k1, li5]*FourVector[-k2, li1]*
+      MetricTensor[li2, li3]*ScalarProduct[-k3, k1 + k2 + k3] -
+     (2*I)*(FgT3 - FgT7)*gc33*FourVector[-k1, li3]*FourVector[-k2, li1]*
+      MetricTensor[li2, li5]*ScalarProduct[-k3, k1 + k2 + k3] -
+     (4*I)*(FgT1 - FgT5)*gc33*FourVector[-k1, li2]*FourVector[-k2, li1]*
+      MetricTensor[li3, li5]*ScalarProduct[-k3, k1 + k2 + k3] +
+     I*(FgT2 - FgT6)*gc33*MetricTensor[li1, li5]*MetricTensor[li2, li3]*
+      ScalarProduct[-k1, -k2]*ScalarProduct[-k3, k1 + k2 + k3] +
+     (2*I)*(FgT3 - FgT7)*gc33*MetricTensor[li1, li3]*MetricTensor[li2, li5]*
+      ScalarProduct[-k1, -k2]*ScalarProduct[-k3, k1 + k2 + k3] +
+     (4*I)*(FgT1 - FgT5)*gc33*MetricTensor[li1, li2]*MetricTensor[li3, li5]*
+      ScalarProduct[-k1, -k2]*ScalarProduct[-k3, k1 + k2 + k3]))],
+ FeynAmp[GraphName["", "T1", "G1C1P2", "N2"],
+  -(Conjugate[PolarizationVector[k1, li1]]*
+    Conjugate[PolarizationVector[k2, li2]]*
+    Conjugate[PolarizationVector[k3, li3]]*DiracSpinor[-p2, MMU] .
+     (I*gc27L*DiracMatrix[li4] . ChiralityProjector[-1] +
+      I*gc27R*DiracMatrix[li4] . ChiralityProjector[1]) .
+     DiracSpinor[p1, MMU]*MetricTensor[li4, li5]*PropagatorDenominator[
+     k1 + k2 + k3, MZ]*((8*I)*gc34*(cw^2*FgT0 + FgT4*sw^2)*
+      FourVector[-k1, li5]*FourVector[-k2, li3]*FourVector[-k3, li2]*
+      FourVector[k1 + k2 + k3, li1] + I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k1, li3]*FourVector[-k2, li5]*FourVector[-k3, li2]*
+      FourVector[k1 + k2 + k3, li1] + I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k1, li2]*FourVector[-k2, li3]*FourVector[-k3, li5]*
+      FourVector[k1 + k2 + k3, li1] + I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k1, li5]*FourVector[-k2, li3]*FourVector[-k3, li1]*
+      FourVector[k1 + k2 + k3, li2] + (4*I)*gc34*(cw^2*FgT1 + FgT5*sw^2)*
+      FourVector[-k1, li3]*FourVector[-k2, li5]*FourVector[-k3, li1]*
+      FourVector[k1 + k2 + k3, li2] + (2*I)*gc34*(cw^2*FgT3 + FgT7*sw^2)*
+      FourVector[-k1, li3]*FourVector[-k2, li1]*FourVector[-k3, li5]*
+      FourVector[k1 + k2 + k3, li2] + (2*I)*gc34*(cw^2*FgT3 + FgT7*sw^2)*
+      FourVector[-k1, li2]*FourVector[-k2, li5]*FourVector[-k3, li1]*
+      FourVector[k1 + k2 + k3, li3] + I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k1, li5]*FourVector[-k2, li1]*FourVector[-k3, li2]*
+      FourVector[k1 + k2 + k3, li3] + (4*I)*gc34*(cw^2*FgT1 + FgT5*sw^2)*
+      FourVector[-k1, li2]*FourVector[-k2, li1]*FourVector[-k3, li5]*
+      FourVector[k1 + k2 + k3, li3] - (4*I)*gc34*(cw^2*FgT1 + FgT5*sw^2)*
+      FourVector[-k3, li5]*FourVector[k1 + k2 + k3, li3]*
+      MetricTensor[li1, li2]*ScalarProduct[-k1, -k2] -
+     (2*I)*gc34*(cw^2*FgT3 + FgT7*sw^2)*FourVector[-k3, li5]*
+      FourVector[k1 + k2 + k3, li2]*MetricTensor[li1, li3]*
+      ScalarProduct[-k1, -k2] - I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k3, li2]*FourVector[k1 + k2 + k3, li3]*
+      MetricTensor[li1, li5]*ScalarProduct[-k1, -k2] -
+     I*gc34*(cw^2*FgT2 + FgT6*sw^2)*FourVector[-k3, li5]*
+      FourVector[k1 + k2 + k3, li1]*MetricTensor[li2, li3]*
+      ScalarProduct[-k1, -k2] - (2*I)*gc34*(cw^2*FgT3 + FgT7*sw^2)*
+      FourVector[-k3, li1]*FourVector[k1 + k2 + k3, li3]*
+      MetricTensor[li2, li5]*ScalarProduct[-k1, -k2] +
+     I*gc34*(cw^2*FgT2 + FgT6*sw^2)*FourVector[-k3, li2]*
+      FourVector[k1 + k2 + k3, li1]*MetricTensor[li3, li5]*
+      ScalarProduct[-k1, -k2] + (2*I)*gc34*(cw^2*FgT3 + FgT7*sw^2)*
+      FourVector[-k3, li1]*FourVector[k1 + k2 + k3, li2]*
+      MetricTensor[li3, li5]*ScalarProduct[-k1, -k2] -
+     (2*I)*gc34*(cw^2*FgT3 + FgT7*sw^2)*FourVector[-k2, li5]*
+      FourVector[k1 + k2 + k3, li3]*MetricTensor[li1, li2]*
+      ScalarProduct[-k1, -k3] - (4*I)*gc34*(cw^2*FgT1 + FgT5*sw^2)*
+      FourVector[-k2, li5]*FourVector[k1 + k2 + k3, li2]*
+      MetricTensor[li1, li3]*ScalarProduct[-k1, -k3] -
+     I*gc34*(cw^2*FgT2 + FgT6*sw^2)*FourVector[-k2, li3]*
+      FourVector[k1 + k2 + k3, li2]*MetricTensor[li1, li5]*
+      ScalarProduct[-k1, -k3] - I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k2, li5]*FourVector[k1 + k2 + k3, li1]*
+      MetricTensor[li2, li3]*ScalarProduct[-k1, -k3] +
+     I*gc34*(cw^2*FgT2 + FgT6*sw^2)*FourVector[-k2, li3]*
+      FourVector[k1 + k2 + k3, li1]*MetricTensor[li2, li5]*
+      ScalarProduct[-k1, -k3] + (2*I)*gc34*(cw^2*FgT3 + FgT7*sw^2)*
+      FourVector[-k2, li1]*FourVector[k1 + k2 + k3, li3]*
+      MetricTensor[li2, li5]*ScalarProduct[-k1, -k3] -
+     (2*I)*gc34*(cw^2*FgT3 + FgT7*sw^2)*FourVector[-k2, li1]*
+      FourVector[k1 + k2 + k3, li2]*MetricTensor[li3, li5]*
+      ScalarProduct[-k1, -k3] - I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k2, li3]*FourVector[-k3, li5]*MetricTensor[li1, li2]*
+      ScalarProduct[-k1, k1 + k2 + k3] - I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k2, li5]*FourVector[-k3, li2]*MetricTensor[li1, li3]*
+      ScalarProduct[-k1, k1 + k2 + k3] - (8*I)*gc34*(cw^2*FgT0 + FgT4*sw^2)*
+      FourVector[-k2, li3]*FourVector[-k3, li2]*MetricTensor[li1, li5]*
+      ScalarProduct[-k1, k1 + k2 + k3] + I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k2, li5]*FourVector[-k3, li1]*MetricTensor[li2, li3]*
+      ScalarProduct[-k1, k1 + k2 + k3] + I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k2, li1]*FourVector[-k3, li5]*MetricTensor[li2, li3]*
+      ScalarProduct[-k1, k1 + k2 + k3] - I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k2, li3]*FourVector[-k3, li1]*MetricTensor[li2, li5]*
+      ScalarProduct[-k1, k1 + k2 + k3] - I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k2, li1]*FourVector[-k3, li2]*MetricTensor[li3, li5]*
+      ScalarProduct[-k1, k1 + k2 + k3] - I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k1, li5]*FourVector[k1 + k2 + k3, li3]*
+      MetricTensor[li1, li2]*ScalarProduct[-k2, -k3] -
+     I*gc34*(cw^2*FgT2 + FgT6*sw^2)*FourVector[-k1, li5]*
+      FourVector[k1 + k2 + k3, li2]*MetricTensor[li1, li3]*
+      ScalarProduct[-k2, -k3] + I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k1, li3]*FourVector[k1 + k2 + k3, li2]*
+      MetricTensor[li1, li5]*ScalarProduct[-k2, -k3] +
+     I*gc34*(cw^2*FgT2 + FgT6*sw^2)*FourVector[-k1, li2]*
+      FourVector[k1 + k2 + k3, li3]*MetricTensor[li1, li5]*
+      ScalarProduct[-k2, -k3] - (8*I)*gc34*(cw^2*FgT0 + FgT4*sw^2)*
+      FourVector[-k1, li5]*FourVector[k1 + k2 + k3, li1]*
+      MetricTensor[li2, li3]*ScalarProduct[-k2, -k3] -
+     I*gc34*(cw^2*FgT2 + FgT6*sw^2)*FourVector[-k1, li3]*
+      FourVector[k1 + k2 + k3, li1]*MetricTensor[li2, li5]*
+      ScalarProduct[-k2, -k3] - I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k1, li2]*FourVector[k1 + k2 + k3, li1]*
+      MetricTensor[li3, li5]*ScalarProduct[-k2, -k3] +
+     (8*I)*gc34*(cw^2*FgT0 + FgT4*sw^2)*MetricTensor[li1, li5]*
+      MetricTensor[li2, li3]*ScalarProduct[-k1, k1 + k2 + k3]*
+      ScalarProduct[-k2, -k3] + I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      MetricTensor[li1, li3]*MetricTensor[li2, li5]*ScalarProduct[-k1,
+       k1 + k2 + k3]*ScalarProduct[-k2, -k3] + I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      MetricTensor[li1, li2]*MetricTensor[li3, li5]*ScalarProduct[-k1,
+       k1 + k2 + k3]*ScalarProduct[-k2, -k3] -
+     (2*I)*gc34*(cw^2*FgT3 + FgT7*sw^2)*FourVector[-k1, li3]*
+      FourVector[-k3, li5]*MetricTensor[li1, li2]*ScalarProduct[-k2,
+       k1 + k2 + k3] + I*gc34*(cw^2*FgT2 + FgT6*sw^2)*FourVector[-k1, li5]*
+      FourVector[-k3, li2]*MetricTensor[li1, li3]*ScalarProduct[-k2,
+       k1 + k2 + k3] + (2*I)*gc34*(cw^2*FgT3 + FgT7*sw^2)*
+      FourVector[-k1, li2]*FourVector[-k3, li5]*MetricTensor[li1, li3]*
+      ScalarProduct[-k2, k1 + k2 + k3] - I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k1, li3]*FourVector[-k3, li2]*MetricTensor[li1, li5]*
+      ScalarProduct[-k2, k1 + k2 + k3] - I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k1, li5]*FourVector[-k3, li1]*MetricTensor[li2, li3]*
+      ScalarProduct[-k2, k1 + k2 + k3] - (4*I)*gc34*(cw^2*FgT1 + FgT5*sw^2)*
+      FourVector[-k1, li3]*FourVector[-k3, li1]*MetricTensor[li2, li5]*
+      ScalarProduct[-k2, k1 + k2 + k3] - (2*I)*gc34*(cw^2*FgT3 + FgT7*sw^2)*
+      FourVector[-k1, li2]*FourVector[-k3, li1]*MetricTensor[li3, li5]*
+      ScalarProduct[-k2, k1 + k2 + k3] + I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      MetricTensor[li1, li5]*MetricTensor[li2, li3]*ScalarProduct[-k1, -k3]*
+      ScalarProduct[-k2, k1 + k2 + k3] + (4*I)*gc34*(cw^2*FgT1 + FgT5*sw^2)*
+      MetricTensor[li1, li3]*MetricTensor[li2, li5]*ScalarProduct[-k1, -k3]*
+      ScalarProduct[-k2, k1 + k2 + k3] + (2*I)*gc34*(cw^2*FgT3 + FgT7*sw^2)*
+      MetricTensor[li1, li2]*MetricTensor[li3, li5]*ScalarProduct[-k1, -k3]*
+      ScalarProduct[-k2, k1 + k2 + k3] + I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k1, li5]*FourVector[-k2, li3]*MetricTensor[li1, li2]*
+      ScalarProduct[-k3, k1 + k2 + k3] + (2*I)*gc34*(cw^2*FgT3 + FgT7*sw^2)*
+      FourVector[-k1, li3]*FourVector[-k2, li5]*MetricTensor[li1, li2]*
+      ScalarProduct[-k3, k1 + k2 + k3] - (2*I)*gc34*(cw^2*FgT3 + FgT7*sw^2)*
+      FourVector[-k1, li2]*FourVector[-k2, li5]*MetricTensor[li1, li3]*
+      ScalarProduct[-k3, k1 + k2 + k3] - I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k1, li2]*FourVector[-k2, li3]*MetricTensor[li1, li5]*
+      ScalarProduct[-k3, k1 + k2 + k3] - I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      FourVector[-k1, li5]*FourVector[-k2, li1]*MetricTensor[li2, li3]*
+      ScalarProduct[-k3, k1 + k2 + k3] - (2*I)*gc34*(cw^2*FgT3 + FgT7*sw^2)*
+      FourVector[-k1, li3]*FourVector[-k2, li1]*MetricTensor[li2, li5]*
+      ScalarProduct[-k3, k1 + k2 + k3] - (4*I)*gc34*(cw^2*FgT1 + FgT5*sw^2)*
+      FourVector[-k1, li2]*FourVector[-k2, li1]*MetricTensor[li3, li5]*
+      ScalarProduct[-k3, k1 + k2 + k3] + I*gc34*(cw^2*FgT2 + FgT6*sw^2)*
+      MetricTensor[li1, li5]*MetricTensor[li2, li3]*ScalarProduct[-k1, -k2]*
+      ScalarProduct[-k3, k1 + k2 + k3] + (2*I)*gc34*(cw^2*FgT3 + FgT7*sw^2)*
+      MetricTensor[li1, li3]*MetricTensor[li2, li5]*ScalarProduct[-k1, -k2]*
+      ScalarProduct[-k3, k1 + k2 + k3] + (4*I)*gc34*(cw^2*FgT1 + FgT5*sw^2)*
+      MetricTensor[li1, li2]*MetricTensor[li3, li5]*ScalarProduct[-k1, -k2]*
+      ScalarProduct[-k3, k1 + k2 + k3]))]]
